@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+        div{
+            height: 100vh;
+            width: 100vw;
+            background-color: beige;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        img{
+            box-sizing: border-box;
+            height: 10rem;
+            width: 10rem;
+            border:solid black 0.2rem;
+            margin: 2rem;
+        }
+        
+        #img1{
+            flex-shrink: 2;
+            order: 4;
+            flex-basis: 20rem;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="countner">
+        <img id="img1" src="img1.jpeg" alt="img1"\>
+        
+        <img src="img2.jpeg" alt="img2">
+        
+        <img src="img3.jpeg" alt="img3">
+        
+        <img src="img4.jpeg" alt="img4">
+    </div>
+</body>
+</html>
